@@ -426,6 +426,15 @@ video {
 
 @media screen and (max-width:1000px) {
   #navbar-right{
+    --stripe: #ffedd8;
+    --bg: #ffe4e4;
+
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
     background-color: #ffecec !important;
     font-family: 'Lora', serif;
     font-size: 18px !important;
