@@ -24,15 +24,19 @@ class Navbar extends Component{
     return (
         <>
             <nav className="nav">
-                <div class="title-box">
-                    <span href="/" className="brand_title">Kacche Dhaage</span>
-                    <span className="tag-line">~ Let the Childhood Blossom ~</span>                    
-                </div>
+
+                <Link to="/home">
+                    <div class="title-box">
+                        <span href="/" className="brand_title">Kacche Dhaage</span>
+                        <span className="tag-line">~ Let the Childhood Blossom ~</span>                    
+                    </div>
+                </Link>
+                
 
                 <div>
                     <ul id='navbar-right' className={this.state.clicked ? ".navbar-right active" : ".navbar"}>
                         <li>
-                            <a href="/">Team</a>
+                            <a href="/"><Link to="/team">Team</Link></a>
                         </li>
                         <li>
                             <a href="/">Gallery</a>
